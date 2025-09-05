@@ -1,0 +1,1 @@
+new Siema({ perPage: 3 })

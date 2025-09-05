@@ -1,0 +1,48 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮</title>
+    <link rel="stylesheet" href="./CSS/jogar.css">
+</head>
+<body>
+    <!-- Cabeçalho pronto -->
+    <div class="cabeçalho">
+        <nav>
+            <a href="./index.html"><img src="./Imagens/logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="./relacoes.html">Relações</a></li>
+                <li><a href="./jogo.html" class="active">Jogo</a></li>
+                <li><a href="./recomendacoes.html">Recomendações</a></li>
+                <li><a href="./sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="container">
+        <section class="left">
+          <div id="grid" class="grid" aria-hidden="false"></div>
+    
+          <div class="controls">
+            <button id="btn-clear" class="btn btn-red" title="Apagar letra">✕</button>
+            <button id="btn-submit" class="btn btn-green" title="Enviar palavra">✔</button>
+          </div>
+    
+          <div class="keyboard" id="keyboard"></div>
+        </section>
+    
+        <aside class="right">
+          <h2>Dicas do jogo:</h2>
+          <ol>
+            <li><u>Use palavras comuns</u>: Iniciar com palavras comuns ajuda a acertar letras rapidamente.</li>
+            <li><u>Crie palavras longas</u>: Palavras mais longas podem render mais pontos e limitar as opções do oponente.</li>
+          </ol>
+    
+          <a href="./parabens.html"><button id="concluir" class="concluir">Concluir</button></a>
+        </aside>
+      </main>
+    
+      <div id="message" class="message" aria-live="polite"></div>
+    
+      <script src="./js/jogar.js"></script>
+    </body>
+    </html>

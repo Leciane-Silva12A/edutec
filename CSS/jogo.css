@@ -1,0 +1,83 @@
+@import url(./cabecalho.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #E2F1EF;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+  main {
+    flex: 1; 
+    display: flex;  
+    align-items: center;   
+    justify-content: center; 
+    padding: 6,25 50rem; 
+    gap: 6rem; 
+  }
+  
+  .container {
+  display: flex;
+  align-items: center;
+}
+
+.macaco img {
+  width: 21.875rem;
+}
+  
+  .fala {
+    background-color: #043d1d;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    max-width: 43.75rem;
+    margin-left: 0;
+    position: relative;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .fala::before {
+    content: "";
+    position: absolute;
+    left: -0.9375rem;
+    top: 1.875rem;
+    width: 0;
+    height: 0;
+    border-right: 1.25rem solid #043d1d;
+    border-top: 0.625rem solid transparent;
+    border-bottom: 0.625rem solid transparent;
+  }
+
+  .btn-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+  }
+  
+  .btn-jogar {
+    background-color: #043d1d;
+    color: #fff;
+    padding: 1.125rem 6.25rem;
+    border: none;
+    border-radius: 1.875rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 45.3125rem;
+    margin-left: 5rem;
+  }
+  
+ 
+  .btn-jogar:hover {
+    background-color: #065e2e;
+  }
+

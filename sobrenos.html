@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre nós</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/sobrenos.css">
+</head>
+<body>
+
+  <!-- Cabeçalho já importado pelo @import (não duplicar) -->
+  <div class="cabeçalho">
+    <nav>
+      <a href="./index.html"><img src="./Imagens/logo.png" alt="logo" class="logo"></a> 
+      <ul>
+        <li><a href="./relacoes.html" >Relações</a></li>
+        <li><a href="./jogo.html">Jogo</a></li>
+        <li><a href="./recomendacoes.html">Recomendações</a></li>
+        <li><a href="./sobre.html" class="active">Sobre nós</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Imagem de fundo -->
+  <div class="hero" style="background-image: url('./Imagens/planta2.png');">
+    <div class="overlay">
+      <h1>Dúvidas ou ideias podem ser enviadas via e-mail</h1>
+      <div class="email-section">
+        <input type="text" id="campoEmail" placeholder="Digite aqui..." />
+        <button id="btnEnviar">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conteúdo inferior -->
+  <div class="info-section">
+    <!-- Colaboradores -->
+    <div class="info-block colaboradores">
+      <h3>Nossos colaboradores</h3>
+      <div class="colaboradores-linha">
+        <div class="nomes">
+          <p>Leciane Leonardo</p>
+          <p>Kauê Marques</p>
+          <p>Matheus Masson</p>
+          <p>Arthur Moreira</p>
+        </div>
+        <div class="arrobas">
+          <p>@ysl.leo</p>
+          <p>@kauemm09</p>
+          <p>@theuzinx_fx</p>
+          <p>@arthurmsz_</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recursos -->
+    <div class="info-block">
+      <h3>Recursos utilizados</h3>
+      <div class="resources">
+        <img src="./Imagens/radix-icons_github-logo.png" alt="GitHub">
+        <img src="./Imagens/logos_visual-studio-code.png" alt="VS Code">
+        <img src="./Imagens/logos_chrome.png" alt="Chrome">
+        <img src="./Imagens/logos_google-gmail.png" alt="Gmail">
+        <img src="./Imagens/logos_figma.png" alt="Figma">
+        <img src="./Imagens/logos_youtube-icon.png" alt="YouTube">
+      </div>
+    </div>
+
+    <!-- Fontes -->
+    <div class="info-block">
+      <h3>Fontes</h3>
+      <a href="https://www.todamateria.com.br/biologia/">Toda Matéria</a>
+      <a href="https://meuartigo.brasilescola.uol.com.br/biologia">Brasil Escola</a>
+      <a href="https://www.educamaisbrasil.com.br/educacao/carreiras/qual-e-a-melhor-area-da-biologia">Educa Mais Brasil</a>
+      <a href="https://mundoeducacao.uol.com.br/biologia">Mundo Educação</a>
+      <a href="https://pt.wikipedia.org/wiki/Biologia">Wikipedia</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modalFeedback">
+    <div class="modal-content">
+      <span class="close" id="btnFechar">&times;</span>
+      <h2>Agradecemos pelo Feedback</h2>
+      <button class="btn" id="btnVoltar">Voltar ao início</button>
+    </div>
+  </div>
+  
+  <!-- Importa o JavaScript -->
+  <script src="./js/sobrenos.js"></script>
+
+</body>
+</html>

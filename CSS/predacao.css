@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  line-height: 1.6;
+  background: url("../Imagens/predacao.png") no-repeat center center/cover;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.conteudo {
+  max-width: 1200px;
+  margin: 140px auto 50px auto; /* espaço para cabeçalho */
+  padding: 30px 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+/* Organizando o texto em 2 colunas */
+.texto-colunas {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+}

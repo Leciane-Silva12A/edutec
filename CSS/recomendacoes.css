@@ -1,0 +1,131 @@
+@import url(cabecalho.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+@media (max-width: 48rem) {
+  .cabeçalho ul {
+    flex-direction: column;
+    gap: 0.9375rem;
+  }
+
+  .foto {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto img {
+    margin: 0 0 1.25rem;
+    width: 60%;
+    max-width: 15.625rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .informacao h2 {
+    font-size: 1.1rem;
+  }
+
+  .informacao p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .cabeçalho ul {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .foto img {
+    width: 80%;
+    max-width: 12.5rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .informacao h2 {
+    font-size: 1rem;
+  }
+
+  .informacao p {
+    font-size: 0.9rem;
+  }
+}
+
+h1 {
+    font-family: 'Italiana', serif;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.foto:hover {
+    cursor: pointer;
+}
+
+.fundo {
+    background: url("../Imagens/Imagem fundo recomendacoes.png") no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+.segundo_fundo {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    padding: 7.5rem 1.25rem 2.5rem;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.625rem;
+    padding: 0.9375rem;
+    margin: 1.25rem auto;
+    max-width: 56.25rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease-in-out;
+}
+
+.foto:hover {
+    transform: scale(1.02);
+}
+
+.foto img {
+    width: 9.375rem;
+    border-radius: 1.5625rem;
+    margin-right: 3.125rem;
+}
+
+.informacao {
+    flex: 1;
+}
+
+.informacao h2 {
+    margin: 0 0 0.625rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.informacao p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ddd;
+}
