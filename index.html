@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>MALK - Entenda as Relações entre os Animais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="logo" href="./Imagens/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,77 +13,497 @@
 </head>
 <body>
 
-<header>
-    <div class="cabeçalho">
+    <header>
+        <div class="logo">MALK</div>
         <nav>
             <ul>
-                <li>
-                   <a href="./index.html">MALK</a> 
-                </li>
-                <li>
-                    <a href="./relacoes.html">Relações</a>
-                </li>
-                <li>
-                    <a href="./jogo.html">Jogo</a>
-                </li>
-                <li>
-                    <a href="./recomendacoes.html">Recomendações</a>
-                </li>
-                <li>
-                    <a href="./sobrenos.html">Sobre Nós</a>
-                </li>
+                <li><a href="./relacoes.html">Relações</a></li>
+                <li><a href="./jogo.html">Jogo</a></li>
+                <li><a href="./recomendacoes.html">Recomendações</a></li>
+                <li><a href="./sobrenos.html">Sobre nós</a></li>
             </ul>
         </nav>
-    </div>
-</header>        
+    </header>
+
+    <style>
+        
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --accent-color: #2e8b57;
+  --text-color-light: #f0f0f0;
+  --font-family-header: 'Italiana', serif;
+  --font-family-body: 'Comfortaa', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-body);
+  color: var(--text-color-light);
+  background-color: var(--primary-color);
+  line-height: 1.6;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  font-family: var(--font-family-header);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Imagens/inicio.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5) contrast(1.1);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-family: "Italiana", serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 100;
+  color: var(--secondary-color);
+}
+
+.hero-content p {
+  font-family: "Montserrat", serif;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3cb371;
+}
+
+.bottom-images {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+
+.leopard-left, .leopard-right {
+  width: 250px;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px;
+}
+
+.leopard-left {
+  background-image: url('./Imagens/leopard.png');
+  filter: grayscale(100%);
+}
+
+.leopard-right {
+  background-image: url('./Imagens/leopard.png');
+  filter: saturate(200%);
+}
+
+.relacionamento-section {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.relacionamento-section h2 {
+    font-family: var(--font-family-header);
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+
+.relacionamento-section p {
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.relacionamento-section p strong {
+    font-weight: 700; 
+}
+
+.relacoes-button {
+    display: block; 
+    width: fit-content; 
+    padding: 12px 25px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    margin-left: auto; 
+}
+
+.relacoes-button:hover {
+    background-color: #3cb371; 
+}
+
+@media (max-width: 768px) {
+    .relacionamento-section {
+        padding: 60px 20px;
+    }
+    .relacionamento-section h2 {
+        font-size: 2rem;
+    }
+    .relacionamento-section p {
+        font-size: 1rem;
+    }
+    .relacoes-button {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.contact-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1510414967390-e50a4918e9d3?q=80&w=2670&auto=format&fit=crop'); /* Exemplo de imagem de folhagens */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    z-index: 1;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 700px;
+    width: 90%;
+}
+
+.contact-content h3 {
+    font-family: var(--font-family-header);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.email-input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 400px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--text-color-dark);
+}
+
+.email-input::placeholder {
+    color: #888;
+}
+
+.send-button {
+    padding: 15px 30px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    font-family: "Comfortaa";
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #3cb371;
+}
+
+footer {
+    background-color: #e0e0e0; 
+    color: var(--text-color-dark); 
+    padding: 50px 50px;
+    font-family: var(--font-family-body);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1; 
+    min-width: 200px; 
+    margin: 20px 10px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Comfortaa";
+    font-weight: 100;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    font-family: "Montserrat", serif;
+}
+
+.footer-column ul li a {
+    color: var(--text-color-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: var(--accent-color);
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+.social-icons span img {
+    width: 24px; 
+    height: 24px;
+    filter: invert(30%); 
+}
+
+@media (max-width: 768px) {
+    .contact-content h3 {
+        font-size: 1.8rem;
+    }
+    .form-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .email-input, .send-button {
+        width: 90%;
+        max-width: 300px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        min-width: unset;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
+    </style>
 
 
-<div class="pp">
-    <div class="inicio">
+    <main class="hero-section">
+        <div class="hero-background"></div>
 
-        <h1>Entenda as Relações <br> entre os animais</h1>
-        <p class="info">As relações entre animais, chamadas de <br> relações ecológicas,
-        são as interações <br> que ocorrem entre os indivíduos de uma <br> mesma 
-        espécie (intraespecíficas) ou de <br> diferentes espécies (interespecíficas).</p> <br>
-    </div>
+        <section class="hero-content">
+            <h1>Entenda as Relações entre os animais</h1>
+            <p>
+                As relações entre animais, chamadas de <br>
+                 relações ecológicas, são as interações <br>
+                que ocorrem entre os indivíduos de uma <br>
+                 mesma espécie (intraespecíficas) ou de <br>
+                diferentes espécie (interespecíficas). <br>
+            </p>
+            <a href="#relacionamento" class="cta-button">Saiba Mais</a>
+        </section>
 
-               <div class="tigre">
-                <img src="./Imagens/inicio.png" alt="tigre">
-            </div> 
-    <div>
-            <button class="botao1">Saiba Mais</button>
-    </div>
-</div>
-<div class="preto">
-    <img src="./Imagens/preto.png" alt="preto">
-</div>
-<div class="tigres">
-    <img src="./Imagens/tigres.png" alt="tigres">
-</div>
+        <div class="bottom-images">
+            <div class="leopard-left"></div>
+            <div class="leopard-right"></div>
+        </div>
+    </main>
 
 
+    <section id="relacionamento" class="relacionamento-section">
+        <h2>Como os Seres Vivos se Relacionam</h2>
+        <p>
+            No ambiente natural, nenhum ser vivo vive isolado. Todos os <br>
+            organismos interagem, direta ou indiretamente, entre si e com o <br>
+            meio em que vivem. Essas interações são chamadas de <strong>relações <br>
+            ecológicas</strong> e são fundamentais para o equilíbrio dos ecossistemas. <br>
+        </p>
+        <p>
+            As relações ecológicas podem ocorrer entre indivíduos da mesma <br>
+            espécie (<strong>intraespecíficas</strong>) ou de espécies diferentes <br>
+            (<strong>interespecíficas</strong>). Elas podem ser <strong>harmônicas</strong>, quando não há <br>
+            prejuízo para os envolvidos, ou <strong>desarmônicas</strong>, quando ao menos um <br>
+            dos participantes sai prejudicado.
+        </p>
+        <a href="./relacoes.html" class="cta-button">Ir para Relações</a>
+    </section>
 
-<main class="dois">
-    <div>
-        <h1>
-            Como os Seres Vivos se Relacionam 
-        </h1>
-        <p>No ambiente natural, nenhum ser vivo vive isolado.
-            Todos os <br> organismos interagem, direta ou indiretamente,
-            entre si e com o <br> meio em que vivem. Essas interações são 
-            chamadas de <strong>relações <br> ecológicas</strong> e são
-            fundamentais para o equilíbrio dos ecossistemas. <br>
-<br>
+    <section class="contact-section">
+        <div class="contact-background"></div>
+        <div class="contact-content">
+            <h3>Dúvidas ou ideias podem ser enviadas via e-mail</h3>
+            <div class="form-group">
+                <input type="email" placeholder="Digite aqui..." class="email-input">
+                <button class="send-button">Enviar</button>
+            </div>
+        </div>
+    </section>
 
-            As relações ecológicas podem ocorrer entre indivíduos da 
-            mesma <br> espécie <strong>(intraespecíficas)</strong> ou de espécies diferentes <br>
-            <strong>(interespecíficas)</strong>. Elas podem ser <strong>harmônicas</strong>, quando não
-            há  <br> prejuízo para os envolvidos, ou <strong>desarmônicas</strong>, quando ao 
-            menos um <br> dos participantes sai prejudicado.</p> <br>
-    </div>
-    <div>
-        <button class="botao2"><a href="./relacoes.html">Ir para Relações</a></button>
-    </div>
-</main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Nossos colaboradores</h4>
+                <ul>
+                    <li>Leciane Leonardo</li>
+                    <li>Kauê Marques</li>
+                    <li>Matheus Masson</li>
+                    <li>Arthur Moreira</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4></h4> <ul>
+                    <li>@yls.leo</li>
+                    <li>@kauemm09</li>
+                    <li>@theuzinx_fx</li>
+                    <li>@arthurmsz_</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Recursos utilizados</h4>
+                <div class="social-icons">
+                    <span><img src="./Imagens/radix-icons_github-logo.png" alt="GitHub"/></span>
+                    <span><img src="./Imagens/logos_visual-studio-code.png" alt="VS Code"/></span>
+                    <span><img src="./Imagens/logos_chrome.png" alt="Chrome"/></span>
+                    <span><img src="./Imagens/logos_google-gmail.png" alt="Gmail"/></span>
+                    <span><img src="./Imagens/logos_figma.png" alt="Figma"/></span>
+                    <span><img src="./Imagens/logos_youtube-icon.png" alt="YouTube"/></span>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Fontes</h4>
+                <ul>
+                    <li><a href="https://www.todamateria.com.br/biologia/" target="_blank">https://www.todamateria.com.br/biologia/</a></li>
+                    <li><a href="https://meuartigo.brasilescola.uol.com.br/biologia" target="_blank">https://meuartigo.brasilescola.uol.com.br/biologia</a></li>
+                    <li><a href="https://www.educamaisbrasil.com.br/educacao/carreira/qual-e-a-melhor-area-da-biologia" target="_blank">https://www.educamaisbrasil.com.br/educacao/carreira/qual-e-a-melhor-area-da-biologia</a></li>
+                    <li><a href="https://mundodaeducacao.uol.com.br/biologia" target="_blank">https://mundodaeducacao.uol.com.br/biologia</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Biologia" target="_blank">https://pt.wikipedia.org/wiki/Biologia</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
