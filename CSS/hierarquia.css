@@ -7,18 +7,32 @@
 
 body {
     background: url("../Imagens/hierarquia.jpg") no-repeat center center/cover;
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    
 }
 
 .predacao {
+    
 
-    h1 {
-        margin-bottom: 20px;
-        font-size: 2em;
-      }
-      
-      p {
-        margin-bottom: 15px;
-        text-align: justify;
-      }
+    .colmeia {
+        max-width: 1000px;
+        margin: 140px auto 50px auto; /* espaço para cabeçalho */
+        padding: 30px 40px;
+        display: flex;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+          }
+          
+          p {
+            margin-bottom: 15px;
+            text-align: justify;
+          }
+
+          img {
+            max-width: 250px;
+          }
+    }
 }

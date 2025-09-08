@@ -50,7 +50,7 @@ body {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -113,7 +113,7 @@ nav ul li a:hover {
 }
 
 .hero-content {
-  position: relative;
+
   z-index: 2;
   width: 90%;
   max-width: 800px;
@@ -122,6 +122,8 @@ nav ul li a:hover {
   backdrop-filter: blur(5px);
   border-radius: 10px;
   text-align: left;
+  position: relative;
+    left: 20;
 }
 
 .hero-content h1 {
@@ -170,15 +172,6 @@ nav ul li a:hover {
   margin: 0 10px;
 }
 
-.leopard-left {
-  background-image: url('./Imagens/leopard.png');
-  filter: grayscale(100%);
-}
-
-.leopard-right {
-  background-image: url('./Imagens/leopard.png');
-  filter: saturate(200%);
-}
 
 .relacionamento-section {
     background-color: var(--primary-color);
@@ -191,14 +184,15 @@ nav ul li a:hover {
 
 .relacionamento-section h2 {
     font-family: var(--font-family-header);
-    font-size: 2.8rem;
+    font-size: 3rem;
+    font-weight: 100;
     margin-bottom: 40px;
     color: var(--secondary-color);
 }
 
 .relacionamento-section p {
     font-family: "Montserrat";
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.8;
     margin-bottom: 20px;
     max-width: 900px;
@@ -261,7 +255,6 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1510414967390-e50a4918e9d3?q=80&w=2670&auto=format&fit=crop'); /* Exemplo de imagem de folhagens */
     background-size: cover;
     background-position: center;
     filter: brightness(0.6);
@@ -278,7 +271,8 @@ nav ul li a:hover {
 
 .contact-content h3 {
     font-family: var(--font-family-header);
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 100;
     margin-bottom: 40px;
     line-height: 1.3;
 }
@@ -340,6 +334,7 @@ footer {
     flex: 1; 
     min-width: 200px; 
     margin: 20px 10px;
+    color: #000;
 }
 
 .footer-column h4 {
@@ -399,6 +394,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        background-color: #E2F1EF;
     }
     .footer-column {
         min-width: unset;
@@ -410,6 +406,18 @@ footer {
     }
 }
     </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.querySelector(".btn"); 
+    const target = document.querySelector("#relacoes"); 
+
+    btn.addEventListener("click", function(event) {
+      event.preventDefault(); 
+      target.scrollIntoView({ behavior: "smooth" }); 
+    });
+  });
+    </script>
 
 
     <main class="hero-section">
@@ -423,7 +431,7 @@ footer {
                  mesma espécie (intraespecíficas) ou de <br>
                 diferentes espécie (interespecíficas). <br>
             </p>
-            <a href="#relacionamento" class="cta-button">Saiba Mais</a>
+            <a href="#relacoes" class="cta-button">Saiba Mais</a>
         </section>
 
         <div class="bottom-images">
