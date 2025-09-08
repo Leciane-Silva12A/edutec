@@ -6,5 +6,19 @@
 }
 
 body {
-    
+    background: url("../Imagens/hierarquia.jpg") no-repeat center center/cover;
+    opacity: 0.5;
+}
+
+.predacao {
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 2em;
+      }
+      
+      p {
+        margin-bottom: 15px;
+        text-align: justify;
+      }
 }
