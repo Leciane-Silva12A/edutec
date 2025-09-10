@@ -1,0 +1,68 @@
+@import url(fontes.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../Imagens/hierarquia.jpg") no-repeat center center/cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.simbiose {
+  max-width: 62.5rem;
+  margin: 8.75rem auto 3.125rem auto;
+  padding: 1.875rem 2.5rem;
+  background: rgba(0, 0, 0, 0.527);
+  border-radius: 0.75rem;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.simbiose h1 {
+  font-family: "Italiana", serif;
+  font-weight: 100;
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+}
+
+.simbiose p {
+  font-family: "Montserrat";
+  margin-bottom: 0.9375rem;
+  text-align: justify;
+}
+
+.simbiose img {
+  max-width: 9.375rem;
+  margin: 0.625rem;
+}
+
+.direita {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.direita p {
+  width: 410px;
+}
+
+.esquerda {
+  display: flex;
+  align-items: center;
+  margin-left: 6.25rem;
+}
+
+.esquerda p {
+  margin-left: 3.125rem;
+  width: 480px;
+}
+
+.soli {
+  margin-top: 1.875rem;
+  width: 43.125rem;
+  margin-left: 6.875rem;
+}

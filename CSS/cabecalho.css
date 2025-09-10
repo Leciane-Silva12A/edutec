@@ -1,76 +1,75 @@
 .cabeçalho {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .cabeçalho nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.875rem 2.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.cabeçalho nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cabeçalho .logo {
+  position: absolute;
+  left: 0.625rem;
+  height: 3.125rem;
+  width: auto;
+  margin-top: -1.375rem;
+}
+
+.cabeçalho ul {
+  display: flex;
+  list-style: none;
+  gap: 1.875rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cabeçalho ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  padding-bottom: 0.3125rem;
+  transition: color 0.3s;
+}
+
+.cabeçalho ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0.125rem;
+  background: #fcfcfc;
+  transition: width 0.3s;
+}
+
+.cabeçalho ul li a:hover {
+  color: #ffffff;
+}
+
+.cabeçalho ul li a:hover::after,
+.cabeçalho ul li a.active::after {
+  width: 100%;
+}
+
+.cabeçalho ul li a.active {
+  color: #ffcc00;
+}
+
+@media (max-width: 48rem) {
   .cabeçalho .logo {
-    position: absolute; 
-    left: 10px;
-    height: 50px; 
-    width: auto;
-    margin-top: -22px;
+    height: 1.5625rem;
+    left: 1.25rem;
   }
-  
   .cabeçalho ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+    gap: 0.9375rem;
   }
-  
-  .cabeçalho ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-family: 'Comfortaa', cursive;
-    position: relative;
-    padding-bottom: 5px;
-    transition: color 0.3s;
-  }
-  
-  /* Sublinhado ao passar o mouse */
-  .cabeçalho ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background: #fcfcfc;
-    transition: width 0.3s;
-  }
-  
-  .cabeçalho ul li a:hover {
-    color: #ffffff;
-  }
-  
-  .cabeçalho ul li a:hover::after,
-  .cabeçalho ul li a.active::after {
-    width: 100%;
-  }
-  
-  .cabeçalho ul li a.active {
-    color: #ffcc00;
-  }
-  
-  @media (max-width: 768px) {
-    .cabeçalho .logo {
-      height: 25px;
-      left: 20px;
-    }
-    .cabeçalho ul {
-      gap: 15px;
-    }
-  }
+}
