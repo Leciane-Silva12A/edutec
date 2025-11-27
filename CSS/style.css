@@ -10,7 +10,7 @@
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
-    --accent-color: #2e8b57;
+    --accent-color: #2E7771;
     --text-color-light: #f0f0f0;
     --font-family-header: 'Italiana', serif;
     --font-family-body: 'Comfortaa', sans-serif;
@@ -195,7 +195,7 @@
   }
   
   .relacoes-button:hover {
-    background-color: #3cb371; 
+    background-color: #2E7771; 
   }
   
   @media (max-width: 48rem) {
@@ -290,7 +290,7 @@
   }
   
   .send-button:hover {
-    background-color: #3cb371;
+    background-color: #2E7771;
   }
   
   footer {
@@ -387,7 +387,6 @@
   .user-icon-box {
     width: 45px;
     height: 45px;
-    border: 2px solid #1e90ff; /* azul */
     display: flex;
     justify-content: center;
     align-items: center;
