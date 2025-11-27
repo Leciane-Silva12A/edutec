@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MALK - Relações entre os Animais</title>
-    <link rel="stylesheet" href="style.css">
-    <script> src="main.js" </script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="main.js"> </script>
     <link rel="logo" href="./Imagens/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Kalm</title>
 </head>
 <body>
 
     <header>
-        <div class="logo"> <a href="index.html">MALK</a></div>
+        <div> <a class="logo" href="index.html">MALK</a></div>
         <nav>
             <ul>
                 <li><a href="./relacoes.html">Relações</a></li>
@@ -26,390 +25,7 @@
         </nav>
     </header>
 
-    <style>
-        
-        :root {
-  --primary-color: #000;
-  --secondary-color: #fff;
-  --accent-color: #2e8b57;
-  --text-color-light: #f0f0f0;
-  --font-family-header: 'Italiana', serif;
-  --font-family-body: 'Comfortaa', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--font-family-body);
-  color: var(--text-color-light);
-  background-color: var(--primary-color);
-  line-height: 1.6;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1.25rem 3.125rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-}
-
-.logo {
-  font-family: var(--font-family-header);
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 0.125rem;
-  color: var(--secondary-color);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 1.875rem;
-}
-
-nav ul li a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ccc;
-}
-
-.hero-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('./Imagens/inicio.png');
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.5) contrast(1.1);
-  z-index: 1;
-}
-
-.hero-content {
-  z-index: 2;
-  width: 90%;
-  max-width: 50rem;
-  padding: 6.25rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(0.3125rem);
-  border-radius: 0.625rem;
-  text-align: left;
-  position: relative;
-  left: 20;
-}
-
-.hero-content h1 {
-  font-family: "Italiana", serif;
-  font-size: 4rem;
-  margin-bottom: 1.25rem;
-  font-weight: 100;
-  color: var(--secondary-color);
-}
-
-.hero-content p {
-  font-family: "Montserrat", serif;
-  font-size: 1.5rem;
-  margin-bottom: 1.875rem;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 0.75rem 1.5625rem;
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  text-decoration: none;
-  border-radius: 0.3125rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #3cb371;
-}
-
-.bottom-images {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  z-index: 5;
-}
-
-.leopard-left, .leopard-right {
-  width: 15.625rem;
-  height: 10.625rem;
-  background-size: cover;
-  background-position: center;
-  margin: 0 0.625rem;
-}
-
-.relacionamento-section {
-  background-color: var(--primary-color);
-  color: var(--text-color-light);
-  padding: 5rem 3.125rem;
-  max-width: 75rem;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.relacionamento-section h2 {
-  font-family: var(--font-family-header);
-  font-size: 3rem;
-  font-weight: 100;
-  margin-bottom: 2.5rem;
-  color: var(--secondary-color);
-}
-
-.relacionamento-section p {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
-  line-height: 1.8;
-  margin-bottom: 1.25rem;
-  max-width: 56.25rem;
-}
-
-.relacionamento-section p strong {
-  font-weight: 700; 
-}
-
-.relacoes-button {
-  display: block; 
-  width: fit-content; 
-  padding: 0.75rem 1.5625rem;
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  text-decoration: none;
-  border-radius: 0.3125rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-top: 2.5rem;
-  margin-left: auto; 
-}
-
-.relacoes-button:hover {
-  background-color: #3cb371; 
-}
-
-@media (max-width: 48rem) {
-  .relacionamento-section {
-    padding: 3.75rem 1.25rem;
-  }
-  .relacionamento-section h2 {
-    font-size: 2rem;
-  }
-  .relacionamento-section p {
-    font-size: 1rem;
-  }
-  .relacoes-button {
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-.contact-section {
-  position: relative;
-  width: 100%;
-  height: 25rem; 
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--secondary-color);
-  text-align: center;
-}
-
-.contact-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.6);
-  z-index: 1;
-}
-
-.contact-content {
-  position: relative;
-  z-index: 2;
-  padding: 1.25rem;
-  max-width: 43.75rem;
-  width: 90%;
-}
-
-.contact-content h3 {
-  font-family: var(--font-family-header);
-  font-size: 3rem;
-  font-weight: 100;
-  margin-bottom: 2.5rem;
-  line-height: 1.3;
-}
-
-.form-group {
-  display: flex;
-  justify-content: center;
-  gap: 0.9375rem;
-}
-
-.email-input {
-  padding: 0.9375rem 1.25rem;
-  border: none;
-  border-radius: 0.3125rem;
-  width: 70%;
-  max-width: 25rem;
-  font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: var(--text-color-dark);
-}
-
-.email-input::placeholder {
-  color: #888;
-}
-
-.send-button {
-  padding: 0.9375rem 1.875rem;
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  border: none;
-  border-radius: 0.3125rem;
-  font-family: "Comfortaa";
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.send-button:hover {
-  background-color: #3cb371;
-}
-
-footer {
-  background-color: #e0e0e0; 
-  color: var(--text-color-dark); 
-  padding: 3.125rem 3.125rem;
-  font-family: var(--font-family-body);
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-  max-width: 75rem;
-  margin: 0 auto;
-}
-
-.footer-column {
-  flex: 1; 
-  min-width: 12.5rem; 
-  margin: 1.25rem 0.625rem;
-  color: #000;
-}
-
-.footer-column h4 {
-  font-size: 1.2rem;
-  margin-bottom: 1.25rem;
-  font-weight: 700;
-  color: #000;
-  font-family: "Comfortaa";
-  font-weight: 100;
-}
-
-.footer-column ul {
-  list-style: none;
-}
-
-.footer-column ul li {
-  margin-bottom: 0.625rem;
-  font-size: 0.95rem;
-  font-family: "Montserrat", serif;
-}
-
-.footer-column ul li a {
-  color: var(--text-color-dark);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-column ul li a:hover {
-  color: var(--accent-color);
-}
-
-.social-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9375rem; 
-}
-
-.social-icons span img {
-  width: 1.5rem; 
-  height: 1.5rem;
-  filter: invert(30%); 
-}
-
-@media (max-width: 48rem) {
-  .contact-content h3 {
-    font-size: 1.8rem;
-  }
-  .form-group {
-    flex-direction: column;
-    align-items: center;
-  }
-  .email-input, .send-button {
-    width: 90%;
-    max-width: 18.75rem;
-  }
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #E2F1EF;
-  }
-  .footer-column {
-    min-width: unset;
-    width: 100%;
-    margin: 1.25rem 0;
-  }
-  .social-icons {
-    justify-content: center;
-  }
-}
-
-    </style>
-
-
-
-
+  
     <main class="hero-section">
         <div class="hero-background"></div>
         <section class="hero-content">
@@ -473,7 +89,6 @@ footer {
             </div>
             <div class="footer-column"> 
                 <ul>
-                    <li></li>
                     <li>@yls.leo</li>
                     <li>@kauemm09</li>
                     <li>@theuzinx_fx</li>
@@ -494,11 +109,11 @@ footer {
             <div class="footer-column">
                 <h4>Fontes</h4>
                 <ul>
-                    <li><a href="https://www.todamateria.com.br/biologia/" target="_blank">https://www.todamateria.com.br/biologia/</a></li>
-                    <li><a href="https://meuartigo.brasilescola.uol.com.br/biologia" target="_blank">https://meuartigo.brasilescola.uol.com.br/biologia</a></li>
-                    <li><a href="https://www.educamaisbrasil.com.br/educacao/carreira/qual-e-a-melhor-area-da-biologia" target="_blank">https://www.educamaisbrasil.com.br/educacao/carreira/qual-e-a-melhor-area-da-biologia</a></li>
-                    <li><a href="https://mundodaeducacao.uol.com.br/biologia" target="_blank">https://mundodaeducacao.uol.com.br/biologia</a></li>
-                    <li><a href="https://pt.wikipedia.org/wiki/Biologia" target="_blank">https://pt.wikipedia.org/wiki/Biologia</a></li>
+                    <li><a href="https://www.todamateria.com.br/biologia/" target="_blank">Toda Matéria</a></li>
+                    <li><a href="https://meuartigo.brasilescola.uol.com.br/biologia" target="_blank">Brasil Escola</a></li>
+                    <li><a href="https://www.educamaisbrasil.com.br/educacao/carreira/qual-e-a-melhor-area-da-biologia" target="_blank">Educa Mais Brasil</a></li>
+                    <li><a href="https://mundodaeducacao.uol.com.br/biologia" target="_blank">Mundo Educação</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Biologia" target="_blank">Wikipedia</a></li>
                 </ul>
             </div>
         </div>
