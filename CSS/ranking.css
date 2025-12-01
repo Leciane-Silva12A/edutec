@@ -7,11 +7,6 @@ body {
   margin-top: 200px;
 }
 
-header { padding: 18px 48px; }
-.cabeçalho nav { display:flex; align-items:center; justify-content:space-between; gap:18px; }
-.cabeçalho .logo { width:56px; height:auto; }
-.cabeçalho nav ul { list-style:none; display:flex; gap:32px; align-items:center; margin:0; padding:0; }
-.cabeçalho nav a { text-decoration:none; color: #132015; font-size:16px; }
 
 .ranking-container {
   width: 74%;

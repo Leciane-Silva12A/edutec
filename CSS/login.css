@@ -1,42 +1,46 @@
 @import url(cabecalho.css);
 @import url(fontes.css);
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1.25rem 3.125rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-}
-
-.logo {
-  font-family: var(--font-family-header);
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 0.125rem;
-  color: var(--secondary-color);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 1.875rem;
-}
-
-nav ul li a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-family:"Comfortaa";
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    color: var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1.875rem;
+  }
+  
+  nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
 
 body {
   display: flex;
@@ -126,7 +130,7 @@ button:hover {
     font-family: "Comfortaa";
     margin: 20px;
     gap: 20px;
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
     cursor: pointer;
     font-size: 14px;
