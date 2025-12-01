@@ -1,89 +1,92 @@
 @import url(cabecalho.css);
 @import url(fontes.css);
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background-color: #d7ebe7;
+  color: #132015;
+  margin-top: 200px;
 }
 
-body {
-    background: #dff1ed;
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+header { padding: 18px 48px; }
+.cabeçalho nav { display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.cabeçalho .logo { width:56px; height:auto; }
+.cabeçalho nav ul { list-style:none; display:flex; gap:32px; align-items:center; margin:0; padding:0; }
+.cabeçalho nav a { text-decoration:none; color: #132015; font-size:16px; }
 
 .ranking-container {
-    width: 700px;
+  width: 74%;
+  max-width: 780px;
+  margin: 48px auto;            
+  background-color: #b5d1c2;    
+  padding: 56px 48px;           
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
 }
 
-/* Título */
 .ranking-title {
-    background: #2f6f66;
-    width: 50%;
-    margin: 0 auto;
-    padding: 12px 0;
-    text-align: center;
-    border-radius: 0 0 40px 40px;
-    color: white;
+  position: absolute;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1b6551;
+  color: #fff;
+  padding: 14px 72px;
+  border-radius: 0 0 28px 28px;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Italiana', serif;
+  font-weight: 600;
 }
 
-.ranking-title h2 {
-    letter-spacing: 3px;
-    font-size: 28px;
+.rank-item {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
 }
 
-/* Caixa */
-.ranking-box {
-    background: #a6c1ad;
-    padding: 40px;
-    border-radius: 4px;
-    margin-top: -10px;
+.rank-item:last-child { border-bottom: none; }
+
+.rank-left {
+  display:flex;
+  align-items:center;
+  gap:18px;
 }
 
-/* Cada linha */
-.linha {
-    display: grid;
-    grid-template-columns: 80px 1fr 80px;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.medal {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
 }
 
-.linha:last-child {
-    border-bottom: none;
+.medal[alt] { background: transparent; }
+
+.usericon {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
 }
 
-.linha img {
-    width: 50px;
-    border-radius: 50%;
-} 
-
-.badge img {
-    width: 50px;
+.posicao {
+  font-size: 20px;
+  margin-left: 6px;
+  color: #123;
 }
 
-.badge.numero {
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-}
+.nome { font-size: 18px; }
+.tempo { font-size: 17px; color:#0b2b22; }
 
-
-.user {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.user img {
-    width: 35px;
-}
-
-.tempo {
-    text-align: right;
-    font-size: 18px;
+@media (max-width: 640px) {
+  .ranking-container { width: 92%; padding: 32px 20px; }
+  .ranking-title { padding: 10px 36px; font-size: 20px; top: -36px; }
+  .medal { width: 32px; height: 32px; }
+  .usericon { width: 30px; height: 30px; }
 }

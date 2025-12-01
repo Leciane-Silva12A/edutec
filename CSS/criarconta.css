@@ -40,7 +40,7 @@ nav ul li a {
 body {
   display: flex;
   justify-content: center;
-  align-items: center;  /* centraliza verticalmente */
+  align-items: center;
     
   background-image: url(../Imagens/imagem6.png);
   background-size: cover;
@@ -52,19 +52,18 @@ body {
 }
 
 
-/* Wrapper que realmente centraliza */
 .main {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(50px); /* empurra para baixo */
+  transform: translateY(50px);
 }
 
 .container {
   text-align: center;
   color: white;
-  margin-top: 250px; /* Aumente ou diminua */
+  margin-top: 250px;
 }
 
 .avatar img {

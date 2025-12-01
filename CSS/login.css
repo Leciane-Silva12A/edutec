@@ -124,4 +124,11 @@ button:hover {
 
 .create-account{
     font-family: "Comfortaa";
+    margin-top: 20px;
+    padding: 8px 35px;
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .3s;
 }
