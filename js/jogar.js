@@ -13,7 +13,10 @@
    let board = [];
    
    const secretWords = [
-     'Acido', 'Virus', 'Fases', 'Reino', 'Macho', 'Orgao', 'algas', 'Femea', 'Cobra', 'Tigre' // ajuste conforme desejar
+     'Acido', 'Virus', 'Fases', 'Reino', 'Macho', 'Orgao', 'Algas', 'Femea', 'Cobra', 'Tigre','Genes', 'Flora', 'Fauna', 'Linfa', 
+     'Seiva', 'Bicho', 'Cisto', 'Fungo', 'Musgo', 'Raiva', 'Polen', 'Fibra', 'Folha', 'Ovulo', 'Cloro', 'Lodos', 'Pelos', 'Ninho', 'Cauda', 'Penas',
+    'Anion','Herda','Molar','Oxido','Caule','Hifas','Vespa','Botao','Broto','Larva','Ninfa','Peste','Tumor','Limbo','Fossa','Peixe','Fetal',
+    'Olhos', 'Nariz', 'Venas' ,'Vivos' ,'Fusao' ,'Gemas' ,'Pupas' ,'Ovina' ,'Fluir', 'Morte'   // ajuste conforme desejar
    ];
    
    const SECRET = secretWords[Math.floor(Math.random() * secretWords.length)].toUpperCase();

@@ -1,0 +1,89 @@
+@import url(cabecalho.css);
+@import url(fontes.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dff1ed;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ranking-container {
+    width: 700px;
+}
+
+/* Título */
+.ranking-title {
+    background: #2f6f66;
+    width: 50%;
+    margin: 0 auto;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 0 0 40px 40px;
+    color: white;
+}
+
+.ranking-title h2 {
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+
+/* Caixa */
+.ranking-box {
+    background: #a6c1ad;
+    padding: 40px;
+    border-radius: 4px;
+    margin-top: -10px;
+}
+
+/* Cada linha */
+.linha {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.linha:last-child {
+    border-bottom: none;
+}
+
+.linha img {
+    width: 50px;
+    border-radius: 50%;
+} 
+
+.badge img {
+    width: 50px;
+}
+
+.badge.numero {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user img {
+    width: 35px;
+}
+
+.tempo {
+    text-align: right;
+    font-size: 18px;
+}

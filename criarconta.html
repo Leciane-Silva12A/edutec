@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MALK - Relações entre os Animais</title>
-    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/criarconta.css">
     <script src="main.js"> </script>
     <link rel="logo" href="./Imagens/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
                 <li><a href="./jogo.html">Jogo</a></li>
                 <li><a href="./recomendacoes.html">Recomendações</a></li>
                 <li><a href="./sobrenos.html">Sobre nós</a></li>
-                <li><a href="./login.html"><div class="user-icon-box">
+                <li><a href="./login.html"> <div class="user-icon-box">
                   <svg viewBox="0 0 24 24" class="user-icon">
                       <circle cx="12" cy="8" r="4" stroke="white" stroke-width="2" fill="none"/>
                       <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="white" stroke-width="2" fill="none"/>
@@ -30,34 +30,29 @@
               </ul>
             </nav>
         </div>
+
     </header>
 
-    <div class="login-container">
-
-        <div class="login-box">
-
-            <h1>Entrar</h1>
-
-            <div class="input-group">
-                <label>Usuário</label>
-                <input type="text" placeholder="Digite seu usuário">
-            </div>
-
-            <div class="input-group">
-                <label>Senha</label>
-                <input type="password" placeholder="Digite sua senha">
-            </div>
-
-            <button class="btn">Entrar</button>
-
-            <a href="./criarconta.html" class="register">Criar uma conta</a>
+    <div class="container">
+        <div class="avatar">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Avatar">
         </div>
 
+        <h1>Criar conta</h1>
+
+        <form>
+            <div class="linha">
+                <input type="email" placeholder="E-MAIL">
+                <input type="text" placeholder="USER NAME">
+            </div>
+
+            <div class="linha">
+                <input type="password" placeholder="PASSWORD">
+                <input type="password" placeholder="REPEAT PASSWORD">
+            </div>
+
+            <button type="submit">CRIAR</button>
+        </form>
     </div>
-
-    <style>
-       
-    </style>
-
 </body>
 </html>
