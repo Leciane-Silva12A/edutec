@@ -1,4 +1,4 @@
-.cabeçalho {
+.cabeçalho {    
   background: rgba(0, 0, 0, 0.7);
   padding: 1.875rem 2.5rem;
   position: fixed;
@@ -61,7 +61,7 @@
 }
 
 .cabeçalho ul li a.active {
-  color: #ffcc00;
+  color: #126855;
 }
 
 @media (max-width: 48rem) {

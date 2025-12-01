@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MALK - Relações entre os Animais</title>
-    <link rel="stylesheet" href="./CSS/login.css">
-    <script src="main.js"> </script>
-    <link rel="logo" href="./Imagens/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Entrar — MALK</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./CSS/login.css">
+
 </head>
 <body>
 
-    <header>
-        <div class="cabeçalho">
-            <nav>
-              <a href="./index.html"><img src="./Imagens/logo.png" alt="logo" class="logo"></a> 
-              <ul>
-                <li><a href="./relacoes.html" class="active">Relações</a></li>
-                <li><a href="./jogo.html">Jogo</a></li>
-                <li><a href="./recomendacoes.html">Recomendações</a></li>
-                <li><a href="./sobrenos.html">Sobre nós</a></li>
-                <li><a href="./login.html"><div class="user-icon-box">
-                  <svg viewBox="0 0 24 24" class="user-icon">
-                      <circle cx="12" cy="8" r="4" stroke="white" stroke-width="2" fill="none"/>
-                      <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="white" stroke-width="2" fill="none"/>
-                  </svg></a></li>
-              </ul>
-            </nav>
-        </div>
-    </header>
 
-    <div class="login-container">
-
-        <div class="login-box">
-
-            <h1>Entrar</h1>
-
-            <div class="input-group">
-                <label>Usuário</label>
-                <input type="text" placeholder="Digite seu usuário">
-            </div>
-
-            <div class="input-group">
-                <label>Senha</label>
-                <input type="password" placeholder="Digite sua senha">
-            </div>
-
-            <button class="btn">Entrar</button>
-
-            <a href="./criarconta.html" class="register">Criar uma conta</a>
-        </div>
-
+  <header>
+    <div class="cabeçalho">
+        <nav>
+          <a href="./index.html"><img src="./Imagens/logo.png" alt="logo" class="logo"></a> 
+          <ul>
+            <li><a href="./relacoes.html" class="active">Relações</a></li>
+            <li><a href="./jogo.html">Jogo</a></li>
+            <li><a href="./recomendacoes.html">Recomendações</a></li>
+            <li><a href="./sobrenos.html">Sobre nós</a></li>
+            <li><a href="./login.html"> <div class="user-icon-box">
+              <svg viewBox="0 0 24 24" class="user-icon">
+                  <circle cx="12" cy="8" r="4" stroke="white" stroke-width="2" fill="none"/>
+                  <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="white" stroke-width="2" fill="none"/>
+              </svg></a></li>
+          </ul>
+        </nav>
     </div>
 
-    <style>
-       
-    </style>
+</header>
+
+<div class="container">
+    <div class="avatar">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Avatar">
+    </div>
+
+        <h1>Entrar</h1>
+
+        <form>
+            <div class="linha">
+                <input type="text" placeholder="USER NAME" class="input-field">
+            </div>
+
+            <div class="linha">
+                <input type="password" placeholder="PASSWORD" class="input-field">
+            </div>
+
+            <button type="submit">ENTRAR</button>
+            
+        </form>
+        
+
+        <a href="./criarconta.html" class="create-account">CRIAR UMA CONTA</a>
+    </div>
+
+
+</header>
 
 </body>
 </html>

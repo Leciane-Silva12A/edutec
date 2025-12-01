@@ -2,63 +2,69 @@
 @import url(fontes.css);
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.25rem 3.125rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-  }
-  
-  .logo {
-    font-family: var(--font-family-header);
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 0.125rem;
-    color: var(--secondary-color);
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin-left: 1.875rem;
-  }
-  
-  nav ul li a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #ccc;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.25rem 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
 
+.logo {
+  font-family: var(--font-family-header);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.125rem;
+  color: var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1.875rem;
+}
+
+nav ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
 body {
-    height: 100vh;
-    width: 100%;
-    font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* centraliza verticalmente */
+    
+  background-image: url(../Imagens/imagem6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 
-    background: url("https://i.pinimg.com/1200x/9b/f2/de/9bf2debdf3b1b0ed0ac5a6eb62681c78.jpg")
-    no-repeat center/cover;
+  font-family: 'Comfortaa', serif;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(2px);
+
+/* Wrapper que realmente centraliza */
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50px); /* empurra para baixo */
 }
 
 .container {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
+  margin-top: 250px; /* Aumente ou diminua */
 }
 
 .avatar img {
